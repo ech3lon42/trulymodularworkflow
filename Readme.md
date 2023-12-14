@@ -2,7 +2,7 @@
 
 **_Rethinking the way we use ComfyUI_**
 
-A ComfyUI workflow that uses the latest and greatest community nodes in innovative ways to achieve complete control over the execution.
+A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes in innovative ways to achieve complete control over the execution.
 
 ## Main features:
 ### Breaks up the workflow into functional parts called modules (or stages).
@@ -64,6 +64,11 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 > ![Context Node](documentation/images/pause_pass_through.jpg)
 >
 > </details>
+>
+> Watch the video, which shows how to switch between modes, how to choose images and how to resume the workflow at a specific module:
+>
+> <a href="https://youtu.be/ZUA453rnxNM" target="_blank"><img src="documentation/images/youtube_resume.png" alt="Watch the video" /></a>
+> 
 
 ### Instantly switch between SDXL, SD15 and SDXLTurbo.
 > Switch between SDXL, SD15 and SDXLTurbo with the click of a button. This uses special repeater nodes to automatically switch all modules to the proper CLIP format and to activate the correct IPAdapter models as well as the correct controlnet models. The only thing you may have to do is update your custom loras.
@@ -195,6 +200,38 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 
 
 ### Powerful IPAdapters.
+>  [Matt3o's ComfyUI IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus/tree/main) is one of the most amazing things to happen to SD and this workflow makes heavy use of it. Included are seven different IP Adapters that you can make use of. Each of them may be enabled or disabled directly through the IPA Options Panel.
+> <details>
+> <summary>ℹ️ <i>The IPA Options Panel</i></summary>
+> Choose which IPAdapters you want to activate. More information about each of the adapters is provided below.
+>
+> ![Context Node](documentation/images/ipa_panel.png)
+>
+> </details>
+>
+> <details>
+> <summary>ℹ️ <i>Main IPA</i></summary>
+> Activating the Main IPA will enable the center column of the IPA Configuration. Here you may configure all aspects of the main IPAdapter. By default the main IPA affects the entire image and does not use any masking. However, in the lower part of the configuration area you may swap out the background of your IPAdapter Image.
+>
+> ![Context Node](documentation/images/ipa_main.png)
+> </details>
+>
+> <details>
+> <summary>ℹ️ <i>Background Swaps</i></summary>
+> Among other things, background swapping on the IPA Image allows us to place our subject in totally new environments. You may also place your subject in different areas of the 256x256 Clip Vision Image by manipulating the X and Y Offsets next to the background image upload window. The Clip Vision Preview will update on generation and show you where your subject will appear in relation to the background.
+>
+> Below we see the image produced by our default IPA Image without any background swapping:
+>
+> ![Context Node](documentation/images/ipa_main_simple.png)
+>
+> Below we see the image produced by providing a background image and activating the swap background function:
+>
+> ![Context Node](documentation/images/ipa_main_bgswap.png)
+>
+>
+> </details>
+
+
 
 ## The Modules
 
