@@ -2,6 +2,8 @@
 
 **_Rethinking the way we use ComfyUI_**
 
+A ComfyUI workflow that uses the latest and greatest community nodes in innovative ways to achieve complete control over the execution.
+
 ## Main features:
 ### Breaks up the workflow into functional parts called modules (or stages).
 
@@ -114,6 +116,57 @@
 > Some modules contain additional parameters and toggles which are specific to the module. The detailers include additional prompts, upscalers include resize options etc.
 
 ### Powerful Prompting.
+> The main control panel provides a powerful prompting experience which includes:
+> 
+> <details>
+> <summary>ℹ️ <i>Activating and loading Loras and Embeddings directly in the prompt</i></summary>
+> No need to configure Lora panels. Simply select your Lora in the prompt and it will be loaded automatically. The same goes for embeddings.
+>
+> ![Context Node](documentation/images/prompt_loras.png)
+>
+> </details>
+> </br>
+>
+> <details>
+> <summary>ℹ️ <i>Prompt Styles</i></summary>
+> Quickly and easily apply additional styles to your prompt by selecting from a list. You may also add your own styles. 
+>
+> ![Context Node](documentation/images/prompt_styles.png)
+>
+> </details>
+> </br>
+>
+> <details>
+> <summary>ℹ️ <i>Prompt Builder</i></summary>
+> Use the prompt builder (inspire) node to help you build the perfect prompt or come up with new ideas. 
+>
+> ![Context Node](documentation/images/prompt_builder.png)
+>
+> </details>
+> </br>
+>
+> <details>
+> <summary>ℹ️ <i>Auto-Generated Prompts</i></summary>
+> Activate the 'One button prompt' in the workflow enabler and it will automatically generate prompts for you. 
+>
+> You may configure the subjects, concepts and the amount of randomness to your liking.
+> 
+> > ![Context Node](documentation/images/prompt_autogen.png)
+> 
+> Pro tip: Enable SDXLTurbo and activate the 'One button prompt'. Use the 'SDXLTurbo Drafting Preset' or setup the workflow to only generate an initial image by deactivating all modules, except for 'Initial Image SDXL Turbo'. Configure a batch size of 4 or more images. Also enable 'save initial image' in the workflow enabler. Set ComfyUI to Auto Queue under Extra Options. Your workflow will now auto-generate images using SDXLTurbo and the One-Button-Prompt. It will save the generated images to your output/Draft directory. You can then go through the images and choose the ones that have potential to process them further. Simply drag and drop the image to your ComfyUI window and reconfigure the workflow enabler to generate variations, detailing, upscaling and so on.   
+>
+> ![Context Node](documentation/images/s_turbo_drafting.gif)
+>
+> </details>
+> </br>
+>
+> <details>
+> <summary>ℹ️ <i>Separate SDXLTurbo Prompt</i></summary>
+> A separate Prompt box for SDXLTurbo is provided and sits right next to the main prompt. This way you can have two prompts, one for your main SD1.5 and SDXL prompting and one for your initial image generation with SDXLTurbo. The SDXLTurbo prompt always uses SDXL CLIP, even if you use a SD1.5 model as your primary model and prompt. You may use SDXL loras in the prompt as normal, even if your main model is SD1.5. The workflow handles this automatically. There is no negative prompt for SDXLTurbo because SDXLTurbo runs on cfg 1 and doesn't use it.
+>
+> ![Context Node](documentation/images/prompt_sdxlturbo.png)
+>
+> </details>
 ### Powerful Controlnets.
 ### Powerful IPAdapters.
 
