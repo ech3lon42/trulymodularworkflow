@@ -45,6 +45,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > Pause and restart the workflow at any stage or module of your choice with any images of your choice.
 > <details>
 > <summary>ℹ️ <i>Always Pause</i></summary>
+>
 > Pauses the workflow before any particular module and lets you select which images (from the previous stage) to progress.
 >
 > ![Context Node](documentation/images/pause_always.png)
@@ -52,6 +53,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pause if Batch</i></summary>
+>
 > Pauses the workflow before any particular module, but only if there is more than one incoming image (from the previous stage) to choose from.
 >
 > ![Context Node](documentation/images/pause_batch.png)
@@ -59,6 +61,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pass through</i></summary>
+>
 > Does not pause the workflow before the module and automatically passes on any incoming images (from the previous stage).
 >
 > ![Context Node](documentation/images/pause_pass_through.jpg)
@@ -134,6 +137,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > <details>
 > <summary>ℹ️ <i>Prompt Styles</i></summary>
+>
 > Quickly and easily apply additional styles to your prompt by selecting from a list. You may also add your own styles. 
 >
 > ![Context Node](documentation/images/prompt_styles.png)
@@ -143,7 +147,8 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > <details>
 > <summary>ℹ️ <i>Prompt Builder</i></summary>
-> Use the prompt builder (inspire) node to help you build the perfect prompt or come up with new ideas. 
+>
+> Use the prompt builder provided by the amazing [Lt. Data's Inspire Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack) node to help you build the perfect prompt or come up with new ideas. 
 >
 > ![Context Node](documentation/images/prompt_builder.png)
 >
@@ -152,6 +157,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > <details>
 > <summary>ℹ️ <i>Auto-Generated Prompts</i></summary>
+>
 > Activate the 'One button prompt' in the workflow enabler and it will automatically generate prompts for you. 
 >
 > You may configure the subjects, concepts and the amount of randomness to your liking.
@@ -167,6 +173,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > <details>
 > <summary>ℹ️ <i>Separate SDXLTurbo Prompt</i></summary>
+>
 > A separate Prompt box for SDXLTurbo is provided and sits right next to the main prompt. This way you can have two prompts, one for your main SD1.5 and SDXL prompting and one for your initial image generation with SDXLTurbo. The SDXLTurbo prompt always uses SDXL CLIP, even if you use a SD1.5 model as your primary model and prompt. You may use SDXL loras in the prompt as normal, even if your main model is SD1.5. The workflow handles this automatically. There is no negative prompt for SDXLTurbo because SDXLTurbo runs on cfg 1 and doesn't use it.
 >
 > ![Context Node](documentation/images/prompt_sdxlturbo.png)
@@ -203,6 +210,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >  [Matt3o's ComfyUI IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus/tree/main) is one of the most amazing things to happen to SD and this workflow makes heavy use of it. Included are seven different IP Adapters that you can make use of. Each of them may be enabled or disabled directly through the IPA Options Panel.
 > <details>
 > <summary>ℹ️ <i>The IPA Options Panel</i></summary>
+>
 > Choose which IPAdapters you want to activate. More information about each of the adapters is provided below.
 >
 > ![Context Node](documentation/images/ipa_panel.png)
@@ -211,13 +219,15 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > <details>
 > <summary>ℹ️ <i>Main IPA</i></summary>
+>
 > Activating the Main IPA will enable the center column of the IPA Configuration. Here you may configure all aspects of the main IPAdapter. By default the main IPA affects the entire image and does not use any masking. However, in the lower part of the configuration area you may swap out the background of your IPAdapter Image.
 >
 > ![Context Node](documentation/images/ipa_main.png)
 > </details>
 >
 > <details>
-> <summary>ℹ️ <i>Background Swaps</i></summary>
+> <summary>ℹ️ <i>About Background Swaps</i></summary>
+>
 > Among other things, background swapping on the IPA Image allows us to place our subject in totally new environments. You may also place your subject in different areas of the 256x256 Clip Vision Image by manipulating the X and Y Offsets next to the background image upload window. The Clip Vision Preview will update on generation and show you where your subject will appear in relation to the background.
 >
 > Below we see the image produced by our default IPA Image without any background swapping:
@@ -228,7 +238,8 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > ![Context Node](documentation/images/ipa_main_bgswap.png)
 >
->
+> Background Swapping is available for the Main IPA and for the SDXLTurbo Green and Red IPAs.
+> 
 > </details>
 
 
