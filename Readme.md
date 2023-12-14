@@ -216,7 +216,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > ![Context Node](documentation/images/ipa_panel.png)
 >
 > </details>
->
+> <br />
 > <details>
 > <summary>ℹ️ <i>Main IPA</i></summary>
 >
@@ -224,7 +224,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > ![Context Node](documentation/images/ipa_main.png)
 > </details>
->
+> <br />
 > <details>
 > <summary>ℹ️ <i>About Background Swaps</i></summary>
 >
@@ -240,6 +240,17 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > Background Swapping is available for the Main IPA and for the SDXLTurbo Green and Red IPAs.
 > 
+> </details>
+> <br />
+> <details>
+> <summary>ℹ️ <i>About Subject Focus</i></summary>
+>
+> Another useful technique supported by the workflow, is subject focus. Here we upload an image that contains our subject in some composition, pose or setting. This image should have the same size as our initial generation (e.g. 512x768). The subject is then detected on that image and automatically masked. This mask is then applied to the IPAdapter. As a result the IPAdapter is only applied to our subject and not to the background.
+>
+> Below we see the image produced by background swapping + subject focus. Note that due to our use of subject focus the background swap has almost no effect as the IPAdapter is focusing on the subject only, leaving the rest to our prompt and model.
+>
+> ![Context Node](documentation/images/ipa_main_subjectfocus.png)
+>
 > </details>
 
 
