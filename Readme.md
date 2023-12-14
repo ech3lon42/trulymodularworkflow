@@ -89,15 +89,29 @@
 >
 > The control panel includes an Options box that allows you to toggle the use of LCM, IPAdapter and CFG Rescale within that module.
 > <details>
-> <summary>ℹ️ <i>Example</i></summary>
+> <summary>ℹ️ <i>Options Example</i></summary>
 >
 > ![Context Node](documentation/images/options.png)
 >
 > </details>
 >
 > You have fine control over the start, end and strength of the IPAdapter in each module. Or you can disable the use of IPAdapter altogether. You may even pass a completely new image to the IPAdapter. On top of that you may mix the new image with the original image (from the previous stage) and define the strength of each one (dual IPAdapter).
-> 
+> <details>
+> <summary>ℹ️ <i>IPA Example</i></summary>
+>
+> ![Context Node](documentation/images/ipa_override.png)
+>
+> </details>
+>
 > For each module you may configure any sampler and scheduler you prefer, as well as cfg and steps. The options panel allows you to switch to the LCM sampler in order to speed up the processing time of the module significantly. Simply activate 'Enable LCM' and set the KSampler Config  in the modules control panel. Select the 'LCM' sampler and 'sgm_uniform' scheduler, steps 4 and cfg 1.1. That's it. Your module is now using high-speed LCM sampling. This works for all modules, latent upscalers, detailers, highres fix, sdupscale and so on.
+> <details>
+> <summary>ℹ️ <i>LCM Example</i></summary>
+>
+> ![Context Node](documentation/images/lcm_anywhere.png)
+>
+> </details>
+> 
+> Some modules contain additional parameters and toggles which are specific to the module. The detailers include additional prompts, upscalers include resize options etc.
 
 ### Powerful Prompting.
 ### Powerful Controlnets.
