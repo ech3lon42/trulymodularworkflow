@@ -16,7 +16,7 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 
 > Use a single UI Switch to toggle any of the modules, creating your own custom workflow with just a few clicks.
 > <details>
-> <summary>ℹ️ <i>Example</i></summary>
+> <summary>ℹ️ <i>Workflow Enabler</i></summary>
 > 
 > ![Context Node](documentation/images/teaser_switch.png)
 > 
@@ -26,7 +26,7 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 ### Create Presets.
 > Configure which modules you want to run in your workflow and save them as a preset that can be run with a single click.
 > <details>
-> <summary>ℹ️ <i>Example</i></summary>
+> <summary>ℹ️ <i>Presets Window</i></summary>
 > 
 > ![Context Node](documentation/images/teaser_presets.png)
 > 
@@ -35,7 +35,7 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 ### Selective Processing.
 > Generate several images and choose which ones you wish to progress.
 > <details>
-> <summary>ℹ️ <i>Example</i></summary>
+> <summary>ℹ️ <i>Image Chooser</i></summary>
 >
 > ![Context Node](documentation/images/teaser_chooser.png)
 >
@@ -66,7 +66,7 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 > </details>
 
 ### Instantly switch between SDXL, SD15 and SDXLTurbo.
-> Switch between SDXL, SD15 and SDXLTurbo with the click of a button. This uses special repeater nodes to automatically switch all modules to the proper CLIP format and to activate the correct IPAdapter models. The only thing you may have to do is update your custom loras.
+> Switch between SDXL, SD15 and SDXLTurbo with the click of a button. This uses special repeater nodes to automatically switch all modules to the proper CLIP format and to activate the correct IPAdapter models as well as the correct controlnet models. The only thing you may have to do is update your custom loras.
 > 
 > You can also start progressing an image in SDXL and pause the workflow anywhere you like, switch to SD15 and continue form there.
 > 
@@ -153,7 +153,7 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 > 
 > > ![Context Node](documentation/images/prompt_autogen.png)
 > 
-> Pro tip: Enable SDXLTurbo and activate the 'One button prompt'. Use the 'SDXLTurbo Drafting Preset' or setup the workflow to only generate an initial image by deactivating all modules, except for 'Initial Image SDXL Turbo'. Configure a batch size of 4 or more images. Also enable 'save initial image' in the workflow enabler. Set ComfyUI to Auto Queue under Extra Options. Your workflow will now auto-generate images using SDXLTurbo and the One-Button-Prompt. It will save the generated images to your output/Draft directory. You can then go through the images and choose the ones that have potential to process them further. Simply drag and drop the image to your ComfyUI window and reconfigure the workflow enabler to generate variations, detailing, upscaling and so on.   
+> Pro tip: Enable SDXLTurbo and activate the 'One button prompt'. Use the 'SDXLTurbo Drafting Preset' or setup the workflow to only generate an initial image by deactivating all modules, except for 'Initial Image SDXL Turbo'. Configure a batch size of 4 or more images. Set the Initial Image Preview Window to 'pass through', so the workflow does not pause. Also enable 'save initial image' in the workflow enabler. Set ComfyUI to 'Auto Queue' via the Extra Options checkbox. Your workflow will now auto-generate images using SDXLTurbo and the One-Button-Prompt. It will save the generated images (by default) to your output/Draft directory. You can then go through the images and choose the ones that have potential to process them further. Simply drag and drop the image to your ComfyUI window and reconfigure the workflow enabler to generate variations, detailing, upscaling and so on.   
 >
 > ![Context Node](documentation/images/s_turbo_drafting.gif)
 >
@@ -168,6 +168,32 @@ A ComfyUI workflow that uses the latest and greatest community nodes in innovati
 >
 > </details>
 ### Powerful Controlnets.
+> You can easily switch on and off controlnets from the controlnet panel which sits right above the prompting panel.
+> <details>
+> <summary>ℹ️ <i>Controlnet Panel</i></summary>
+>
+> ![Context Node](documentation/images/controlnet_panel.png)
+>
+> </details>
+>
+> There are three different ways of loading controlnet images:
+> * Direct (a single image that contains the pose or depth information directly), 
+> * Dir (loading images from a directory for batch processing) and 
+> * Image (by supplying a single 'normal' image - the workflow will obtain the pose or depth from it).
+>
+> You may activate one of these modes for both depth and pose in the controlnet panel. The corresponding upload window in the controlnet configuration (to the right of the controlnet panel) will be enabled. Here you can upload your image or, in the case of batch processing (dir mode), supply a directory path to your images.
+> <details>
+> <summary>ℹ️ <i>Controlnet Configuration</i></summary>
+>
+> ![Context Node](documentation/images/controlnet_setup.png)
+>
+> </details>
+>
+> Watch the video, which shows how to use direct pose and batch pose functionality:
+> 
+> <a href="https://youtu.be/1LxgJZxqpzI" target="_blank"><img src="documentation/images/youtube_cnet.png" alt="Watch the video" /></a>
+
+
 ### Powerful IPAdapters.
 
 ## The Modules
