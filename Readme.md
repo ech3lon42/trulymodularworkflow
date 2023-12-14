@@ -44,18 +44,21 @@
 > <details>
 > <summary>ℹ️ <i>Always Pause</i></summary>
 > Pauses the workflow before any particular module.
+
 > ![Context Node](documentation/images/teaser_chooser.jpg)
 >
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pause if Batch</i></summary>
 > Pauses the workflow before any particular module, but only if there is more than one incoming image to choose from.
+
 > ![Context Node](documentation/images/teaser_chooser.jpg)
 >
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pass through</i></summary>
 > Does not pause the workflow before the module and automatically passes on any incoming images.
+
 > ![Context Node](documentation/images/teaser_chooser.jpg)
 >
 > </details>
