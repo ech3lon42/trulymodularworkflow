@@ -2,7 +2,7 @@
 
 **_Rethinking the way we use ComfyUI_**
 
-A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes ([Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) and others)  in innovative ways to achieve complete control over the execution. Beyond that we provide a template for the community to adapt and create truly modular workflows by passing contexts to modules, context switches and image choosers.
+A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes ([Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack), [Image Picker](https://github.com/chrisgoringe/cg-image-picker) and others) in innovative ways to achieve complete control over the execution. Beyond that we provide a template for the community to adapt and take the next step in creating truly modular workflows by passing contexts to modules, context switches and image choosers.
 
 ## Main features:
 ### Breaks up the workflow into functional parts called modules (or stages).
@@ -295,7 +295,20 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > > </details>
 >
 > </details>
-
+>
+> <details>
+> <summary>ℹ️ <i>Face IPAdapter</i></summary>
+>
+> The face IPAdapter is supplied with two images, the subjects face we wish to target and a second image that contains our general composition (e.g. by simply generating an initial image). The face is then detected in the composition and an attention mask is created. The target face is then applied via the IPAdapter Plus Face model. The correct face model (SDXL or SD15) is supplied automatically. 
+> 
+> Therefore, we are now able to produce the target face on initial generation without using any detailers.
+> 
+> The concept and usage is shown in the image below.
+>
+> > ![Context Node](documentation/images/ipa_face.png)
+>
+> </details>
+> <br />
 ## The Modules
 
 ## Installation
