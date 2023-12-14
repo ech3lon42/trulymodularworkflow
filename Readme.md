@@ -16,7 +16,7 @@
 > <details>
 > <summary>ℹ️ <i>Example</i></summary>
 > 
-> ![Context Node](documentation/images/teaser_switch2.jpg)
+> ![Context Node](documentation/images/teaser_switch.png)
 > 
 > </details>
 
@@ -26,7 +26,7 @@
 > <details>
 > <summary>ℹ️ <i>Example</i></summary>
 > 
-> ![Context Node](documentation/images/teaser_presets2.jpg)
+> ![Context Node](documentation/images/teaser_presets.png)
 > 
 > </details>
 
@@ -35,7 +35,7 @@
 > <details>
 > <summary>ℹ️ <i>Example</i></summary>
 >
-> ![Context Node](documentation/images/teaser_chooser.jpg)
+> ![Context Node](documentation/images/teaser_chooser.png)
 >
 > </details>
 
@@ -43,23 +43,23 @@
 > Pause and restart the workflow at any stage or module of your choice.
 > <details>
 > <summary>ℹ️ <i>Always Pause</i></summary>
-> Pauses the workflow before any particular module.
-
-> ![Context Node](documentation/images/teaser_chooser.jpg)
+> Pauses the workflow before any particular module and lets you select which images (from the previous stage) to progress.
+>
+> ![Context Node](documentation/images/pause_always.png)
 >
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pause if Batch</i></summary>
-> Pauses the workflow before any particular module, but only if there is more than one incoming image to choose from.
-
-> ![Context Node](documentation/images/teaser_chooser.jpg)
+> Pauses the workflow before any particular module, but only if there is more than one incoming image (from the previous stage) to choose from.
+>
+> ![Context Node](documentation/images/pause_batch.png)
 >
 > </details>
 > <details>
 > <summary>ℹ️ <i>Pass through</i></summary>
-> Does not pause the workflow before the module and automatically passes on any incoming images.
-
-> ![Context Node](documentation/images/teaser_chooser.jpg)
+> Does not pause the workflow before the module and automatically passes on any incoming images (from the previous stage).
+>
+> ![Context Node](documentation/images/pause_pass_through.jpg)
 >
 > </details>
 ## The Modules
