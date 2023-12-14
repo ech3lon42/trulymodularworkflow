@@ -2,7 +2,7 @@
 
 **_Rethinking the way we use ComfyUI_**
 
-A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes in innovative ways to achieve complete control over the execution.
+A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes ([Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack) and others)  in innovative ways to achieve complete control over the execution. Beyond that we provide a template for the community to adapt and create truly modular workflows by passing contexts to modules, context switches and image choosers.
 
 ## Main features:
 ### Breaks up the workflow into functional parts called modules (or stages).
@@ -247,13 +247,54 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > Another useful technique supported by the workflow, is subject focus. Here we upload an image that contains our subject in some composition, pose or setting. This image should have the same size as our initial generation (e.g. 512x768). The subject is then detected on that image and automatically masked. This mask is then applied to the IPAdapter. As a result the IPAdapter is only applied to our subject and not to the background.
 >
-> Below we see the image produced by background swapping + subject focus. Note that due to our use of subject focus the background swap has almost no effect as the IPAdapter is focusing on the subject only, leaving the rest to our prompt and model.
+> Below we see the image produced by background swapping + subject focus. Note that due to our use of subject focus, the background swap has almost no effect because the IPAdapter is focusing on the subject only, leaving the rest to our prompt and model.
 >
 > ![Context Node](documentation/images/ipa_main_subjectfocus.png)
 >
 > </details>
-
-
+> <br />
+> <details>
+> <summary>ℹ️ <i>IPAdapter Red and Green</i></summary>
+>
+> The workflow supports IPAdapter attention masking. To do this, we activate the red and/or green IPAdapters and provide a color mask to the load image node situated above the reg/green IPAdapter control panel. I highly recommend you try out [Lt. Data's Workflow Component](https://github.com/ltdrdata/ComfyUI-Workflow-Component) to easily draw and modify red/green masks on the fly without leaving ComfyUI. This way you can render an image, copy the clip space to the attention mask node and modify it into a red/green mask using the Image Refiner. To use the Image Refiner simply right click on the load image node and select it from the menu. 
+> 
+> The IPAdapter red will be applied to the red portion of the mask. The IPAdapter green will be applied to the green portion of the mask. It is possible to draw inbetween colors (e.g. yellow) to mix the application. 
+> 
+> In the example below, we create a very rough and simple reg/green mask and upload it to the attention mask node situated above the IPA red/green configuration panels. We then upload an Image of our hand drawn subject to the IPAdapter red. To the IPAdapter green we upload a moody image of a window with light coming through. The IPAdapters apply the concepts according to our mask as can be seen in the result image.
+>
+> ![Context Node](documentation/images/ipa_attention_masking.png)
+>
+> </details>
+> <br />
+> <details>
+> <summary>ℹ️ <i>IPAdapter (SDXLTurbo) Red and Green</i></summary>
+>
+> These IPAdapters are only applied when activated in the control panel and when using SDXLTurbo. They are mainly provided because you might wish to use SD1.5 and SDXLTurbo together but with different IPAdapters for each. Their functionality is exactly the same as described in the prior sections above. You can use Background Swapping, Subject Focus and Attention Masking. Please refer to the sections above for detailed information.
+>
+> > ![Context Node](documentation/images/ipa_sdxlturbo.png)
+> 
+> </details>
+> <br />
+> <details>
+> <summary>ℹ️ <i>Regional IPAdapter</i></summary>
+>
+> On the IPA control panel we may enable the regional IPAdapter. The regional IPAdapter takes a RGB color mask and three input images, one for each color. The concept of each image will be applied according to the RGB color mask, which should have the same dimensions as the generated image (e.g. 768x512 in the example below). Again, it can be useful to try the Image Refiner in order to draw the mask easily. But you may also do this in any other program of course. The regional IPAdapter does not function when using SDXLTurbo (but it will apply on subsequent modules such as HighResFix etc., as these are done with SD1.5. or SDXL). When using SDXLTurbo, refer to the SDXLTurbo Red/Green IPAdapters.
+>
+> > <details>
+> > <summary>ℹ️ <i>Regional IPAdapter Overview</i></summary>
+> >
+> > ![Context Node](documentation/images/regional_ipa_overview.png)
+> >
+> > </details>
+> > <br />
+> > <details>
+> > <summary>ℹ️ <i>Regional IPAdapter Usage</i></summary>
+> >
+> > ![Context Node](documentation/images/regional_ipa_details.png)
+> >
+> > </details>
+>
+> </details>
 
 ## The Modules
 
