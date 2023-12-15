@@ -4,7 +4,7 @@
 
 A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes ([Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack), [Image Picker](https://github.com/chrisgoringe/cg-image-picker) and others) in innovative ways to achieve complete control over the execution. Beyond that we provide a template for the community to adapt and take the next step in creating truly modular workflows by passing contexts to modules, context switches and image choosers.
 
-## Main features:
+## Notable Features:
 ### Breaks up the workflow into functional parts called modules (or stages).
 
 > Several powerful modules are included for you to play with. These are described in detail below and include:
@@ -295,7 +295,7 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > > </details>
 >
 > </details>
->
+> <br />
 > <details>
 > <summary>ℹ️ <i>Face IPAdapter</i></summary>
 >
@@ -309,6 +309,66 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 >
 > </details>
 > <br />
+## Getting Started
+> <details>
+> <summary>ℹ️ <i>Workflow Overview</i></summary>
+>
+> The workflow is divided into **two** areas, the **user area** and the module and workflow **implementation** area.
+> During usage it is usually enough to stay in the user controls area. The image below illustrates the concept.
+>
+> ![Context Node](documentation/images/workflow_overview2.jpg)
+> </details>
+> <br />
+> <details>
+> <summary>ℹ️ <i>Workflow Detail View</i></summary>
+>
+> The workflow consists of many modules that are grouped in module clusters (1 to 4).
+> 
+> The user area consists of the module control panels, the initial image chooser, the final image, the workflow enabler, the prompting area, the model configuration area, the controlnet area, the IPAdapter area and the presets.
+> 
+> The image below illustrated the above concepts and shows the locations of the mentioned parts.
+>
+> ![Context Node](documentation/images/workflow_overview.jpg)
+> </details>
+> <br />
+> <details>
+> <summary>ℹ️ <i>Workflow Usage</i></summary>
+>
+> During usage the following flow (within the user area) is suggested:
+> 
+> ![Context Node](documentation/images/workflow_flow.png)
+> 
+> 1) Start with the workflow enabler. Enable one of the **Initial Gen Modules**, either **SDXLTurbo** or **SD15/SDXL**. If you enable both, then SDXLTurbo will be used to generate the initial image. It does not make sense to enable both, so choose one.
+>
+> 
+>2) Continue along the flow to the **prompting** area. This area also contains controls for the **image size**, **batch** and **seed**, so set them now as needed. The workflow completely supports batch generation in all modules. In fact the workflow shines when using at least a batch size of four to narrow down to the good images via the preview choosers.
+> 
+> 
+> 3) Next is the prompt, if you enabled SDXLTurbo, you need to type your prompt into the **(smaller) SDXLTurbo box**. Otherwise if you are using SD15/SDXL, type your prompt into the **big green positive prompt box**. You may also **add loras and embeddings** as needed via the prompt box (choose them from the insert_lora and insert_embedding controls). A bit to the right is the Prompt Styles area, where you can configure additional styles for your prompt. The one-button prompt is an exception and sits next to the workflow enabler. So if you want to use that, go back to the workflow enabler. 
+> 
+> 
+> 4) Continue along the flow. Below the prompting area is the **model configuration area**. Here you should setup your SDXLTurbo model, your SD15 model and your SDXL model, along with any VAEs. The VAEs are optional, if you have a baked VAE in your model, then simply bypass them (CTRL+B). Be sure to configure the **SDXL or SD15? box**. Here you decide which model will be used to generate your images. You can switch between SDXL and SD15 seemlessly and at any time here.
+> 
+>
+> 5) Now pass below the Initial Image Preview Chooser (big black box in the middle) and configure the sampler, steps, cfg and scheduler for the generation of the initial image. You may also activate LCM here. If you use SDXLTurbo, the SDXLTurbo configuration (just a bit to the right) will be used instead.  
+>
+> 
+> 6) Optionally: Now is the time to configure and enable any optional IPAdapters and Controlnets you might want to use. The IPAdapters can be enabled next to the workflow enabler and they are configured just to the left of it. The controlnets are to the right of the workflow enabler, they can be enabled above the prompt panel and source images are provided in the area to the right of the prompt panel. These areas are also marked on the overview images. There is a lot you can and play around with here, so be sure to get into it after generating your first images.
+> 
+> 
+> 7) You can now queue your first generation. If you configured your models properly your first images should appear in the Initial Image Preview Chooser (big black box in the middle). **It is highly likely that you will get some errors when you first install and try the workflow. It's a huge workflow and there are several model loaders where you need to supply a detector model, an IPAdapter and clip vision model, an LCM Lora, controlnet models and so on. Your filepaths and filenames to those models are different from mine, so you'll have to set them up properly. You only have to do this once and as soon as all the model loaders are satisfied there should not be any errors.**
+>
+> 
+> 8) Choose one (or several) of the images from the Initial Image Preview Chooser box. This is done by clicking on the images you want (which highlights them with a green border) and then on the button **progress selected image as restart**. Note: If you want to choose your images, the Image Chooser must be set to **Always Pause** or at least to **Pause on Batch**. If the image chooser is set to **pass through**, the workflow will not pause and you will not be able to choose images until the workflow is finished. However, once the workflow is finished you may still choose images from any of the image choosers and **restart the flow** from there. Setting the image choosers to **pass through** is useful when you are confident that you don't need to interfere at that module or step.
+>
+> 9) Continue along the flow, now passing into the first module control box, the **Reimagine module**. Note: You will only pass into this module if you enable it in the **Workflow Enabler**. I suggest you do so now because it's a pretty fun module to play around with. All module control boxes have an **Image Chooser Input** to the right and a **Result Preview** (light grey box) to the left of that. You can change the module configuration and restart the workflow from the **Image Chooser Input**. This way you can iterate on your image, optimizing the settings and getting fast feedback by restarting only the module you are currently working on. You don't even need to leave the module controlbox usually.
+> 
+> 
+> 10) To be continued...
+> </details>
+
 ## The Modules
+TODO.
 
 ## Installation
+TODO.
