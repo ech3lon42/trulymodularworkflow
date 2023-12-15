@@ -7,7 +7,7 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 ![Context Node](documentation/images/banner.png)
 
 <p align="center">
-<a href="https://youtu.be/ZUA453rnxNM" target="_blank"><img src="documentation/images/youtube_resume.png" alt="Watch the video" /></a> ***** <a href="https://youtu.be/1LxgJZxqpzI" target="_blank"><img src="documentation/images/youtube_cnet.png" alt="Watch the video" /></a>
+<a href="https://youtu.be/ZUA453rnxNM" target="_blank"><img src="documentation/images/youtube_resume.png" alt="Watch the video" /></a> <a href="https://youtu.be/1LxgJZxqpzI" target="_blank"><img src="documentation/images/youtube_cnet.png" alt="Watch the video" /></a>
 </p>
 
 
