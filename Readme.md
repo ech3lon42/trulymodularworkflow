@@ -11,15 +11,15 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 </p>
 
 ## Table of Contents
-[Features](#Notable Features)
+[Features](#notable-features)
 
-[Getting Started](#Getting Started)
+[Getting Started](#getting-started)
 
-[Modules](#The Modules)
+[Modules](#the-modules)
 
 [Installation](#Installation)
 
-[Designing your own modular workflows](#Extending or Designing your own truly modular workflows)
+[Designing your own modular workflows](#extending-or-designing-your-own-truly-modular-workflows)
 
 [FAQ](#FAQ)
 
