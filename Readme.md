@@ -364,11 +364,98 @@ A [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the la
 > 9) Continue along the flow, now passing into the first module control box, the **Reimagine module**. Note: You will only pass into this module if you enable it in the **Workflow Enabler**. I suggest you do so now because it's a pretty fun module to play around with. All module control boxes have an **Image Chooser Input** to the right and a **Result Preview** (light grey box) to the left of that. You can change the module configuration and restart the workflow from the **Image Chooser Input**. This way you can iterate on your image, optimizing the settings and getting fast feedback by restarting only the module you are currently working on. You don't even need to leave the module controlbox usually.
 > 
 > 
-> 10) To be continued...
+> 10) To be continued... explore on your own for now.
 > </details>
 
 ## The Modules
 TODO.
 
+## Extending or Designing your own truly modular workflows
+There are probably many ways of doing this. I will show you my way. It is how I built this workflow and I recommend you stick to this architecture if you'd like to extend it. 
+
+This section will be more detailed in the future, for now I made a quick [Youtube video](https://youtu.be/CMrnVpWvFNQ) that shows the concepts of using **contexts**, **context switches** and **image choosers** to build **optional modules** of pretty much anything, generators for LCM/SD15/SDXL/SDXLTurbo, upscalers, ipadapters, you name it.
+
+You will require at least the following modules to follow along:
+[Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Image Picker](https://github.com/chrisgoringe/cg-image-picker). 
+The IPAdapter is not really needed to understand and follow the concept, but I use it for fun and you should get it anyway.
+
+
 ## Installation
+
+Simply load the json file in your ComfyUI. Make sure you have installed the **requirements** below and downloaded the needed **models**. 
+
+**Important:** When you first load the workflow you need to select the correct models for IPAdapters (both SDXL and SD15), SDXL, SD15, SDXLTurbo, Ultralytics Detector, Upscaler Models, LCM Loras (because there is only one combobox for this one, which is marked on the Workflow Overview Image, you need to change it depending on SD15 and SDXL).
+
+You will also need:
+- an up to date [ComfyUI](https://github.com/comfyanonymous/ComfyUI) (run update_comfyui.bat inside your ComfyUI/update folder)
+- an SD15 model (e.g. https://civitai.com/models/84728/photon)
+- an SDXL model (e.g. https://civitai.com/models/122822/crystal-clear-xl)
+- an SDXLTurbo model (e.g. https://civitai.com/models/84040/sdxl-turbo-unstable-diffusers-yamermix)
+- an upscaler model (e.g. https://openmodeldb.info/models/4x-Swift-SRGAN)
+- LCM Loras (for both SDXL and SD15)
+  - https://huggingface.co/latent-consistency/lcm-lora-sdxl/tree/main
+  - https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/tree/main
+- ultralytics detection models (yolovn etc.; these should download automatically during usage)
+- ... perhaps something more? Let me know if I missed something.
+
+Unless stated otherwise, download the below requirements by doing a ``git clone https://github.com/xxxx.git`` inside of your custom_modules folder.
+
+**Requirements**:
+- https://github.com/ltdrdata/ComfyUI-Manager.git
+- https://github.com/rgthree/rgthree-comfy.git
+- https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
+
+- Download models to ComfyUI/models/ipadapter/:
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.bin
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.bin
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.bin
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl_vit-h.bin
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.bin
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.bin
+- Download Clip Vision Encoder to ComfyUI/models/clip_vision/:
+  - https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors
+- https://github.com/M1kep/ComfyLiterals.git
+- https://github.com/ltdrdata/ComfyUI-Workflow-Component
+- https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+- https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git
+- https://github.com/WASasquatch/was-node-suite-comfyui
+- https://github.com/BlenderNeko/ComfyUI_Noise.git
+  - **[Bugfix]** Apply the following change to nodes.py: https://github.com/BlenderNeko/ComfyUI_Noise/pull/13/files
+- https://github.com/AIrjen/OneButtonPrompt
+- https://github.com/mav-rik/facerestore_cf.git
+- https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git
+- https://github.com/jags111/efficiency-nodes-comfyui.git
+- https://github.com/Fannovel16/comfyui_controlnet_aux.git
+- https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+- https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git
+- https://github.com/chrisgoringe/cg-image-picker.git
+- https://github.com/wallish77/wlsh_nodes
+- https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+- https://github.com/SeargeDP/SeargeSDXL.git
+- https://github.com/shingo1228/ComfyUI-SDXL-EmptyLatentImage.git
+- https://github.com/JPS-GER/ComfyUI_JPS-Nodes.git
+- https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
+- https://github.com/cubiq/ComfyUI_essentials.git
+- https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92.git
+- https://github.com/SeargeDP/SeargeSDXL.git
+- https://github.com/twri/sdxl_prompt_styler.git
+- Optional: Open a command line (cmd, terminal) in your main ComfyUI directory and run the following command to install rembg (when using WAS nodes this may not be required to do)
+  - .\python_embeded\python.exe -m pip install rembg[gpu]
+
+
+- https://github.com/Gourieff/comfyui-reactor-node.git
+  - Attention: must run install.bat in custom_modules reactor directory.
+  - Manual alternative for Python 3.11:
+    - download insightface to comfyui root folder: https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp311-cp311-win_amd64.whl
+    - .\python_embeded\python.exe -m pip install -U pip 
+    - .\python_embeded\python.exe -m pip install insightface-0.7.3-cp311-cp311-win_amd64.whl
+  - Manual alternative for Python 3.10:
+    - download insightface to comfyui root folder: https://github.com/Gourieff/Assets/raw/main/Insightface/insightface-0.7.3-cp310-cp310-win_amd64.whl
+    - .\python_embeded\python.exe -m pip install -U pip
+    - .\python_embeded\python.exe -m pip install insightface-0.7.3-cp310-cp310-win_amd64.whl
+
+## FAQ
+TODO.
+
+## Troubleshooting
 TODO.
