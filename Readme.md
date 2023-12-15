@@ -388,7 +388,7 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 > </details>
 
 ## The Modules
-TODO.
+TODO. For now refer to [Features](#notable-features) and [Getting Started](#getting-started).
 
 ## Extending or Designing your own truly modular workflows
 There are probably many ways of doing this. I will show you my way. It is how I built this workflow and I recommend you stick to this architecture if you'd like to extend it. 
@@ -475,7 +475,7 @@ Unless stated otherwise, download the below requirements by doing a ``git clone 
     - .\python_embeded\python.exe -m pip install insightface-0.7.3-cp310-cp310-win_amd64.whl
 
 ## FAQ
-TODO.
+TODO. For now refer to [Getting Started](#getting-started).
 
 ## Troubleshooting
-TODO.
+TODO. For now refer to [Getting Started](#getting-started) and [Installation](#Installation).
