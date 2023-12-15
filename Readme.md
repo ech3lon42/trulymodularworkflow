@@ -10,8 +10,21 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 <a href="https://youtu.be/ZUA453rnxNM" target="_blank"><img src="documentation/images/youtube_resume.png" alt="Watch the video" width="300"/></a> <a href="https://youtu.be/1LxgJZxqpzI" target="_blank"><img src="documentation/images/youtube_cnet.png" alt="Watch the video" width="300"/></a>
 </p>
 
+## Table of Contents
+[Features](#Notable Features)
 
-## Notable Features:
+[Getting Started](#Getting Started)
+
+[Modules](#The Modules)
+
+[Installation](#Installation)
+
+[Designing your own modular workflows](#Extending or Designing your own truly modular workflows)
+
+[FAQ](#FAQ)
+
+[Troubleshooting](#Troubleshooting)
+## Notable Features
 ### Breaks up the workflow into functional parts called modules (or stages).
 
 > Several powerful modules are included for you to play with. These are described in detail below and include:
