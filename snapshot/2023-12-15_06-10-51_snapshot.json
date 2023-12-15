@@ -1,0 +1,167 @@
+{
+    "comfyui": "57926635e8d84ae9eea4a0416cc75e363f5ede45",
+    "git_custom_nodes": {
+        "https://github.com/chrisgoringe/cg-image-picker.git": {
+            "hash": "d3a3c8a99804e2bfa3014cb3f1a2219ffca71015",
+            "disabled": false
+        },
+        "https://github.com/chrisgoringe/cg-use-everywhere": {
+            "hash": "d6184dda9e832f363b8b11bcc487e96665c301f1",
+            "disabled": false
+        },
+        "https://github.com/giriss/comfy-image-saver": {
+            "hash": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
+            "disabled": false
+        },
+        "https://github.com/ManglerFTW/ComfyI2I": {
+            "hash": "2bd011b043f87023a2d86a82cd23d594a9793e10",
+            "disabled": false
+        },
+        "https://github.com/M1kep/ComfyLiterals.git": {
+            "hash": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
+            "disabled": false
+        },
+        "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git": {
+            "hash": "aa0d4b42fc0f0a5f973f9d390502a476ab5c35f0",
+            "disabled": false
+        },
+        "https://github.com/sipherxyz/comfyui-art-venture": {
+            "hash": "b463bee48f45ae5565d2d2580865fc1fe64edb10",
+            "disabled": false
+        },
+        "https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git": {
+            "hash": "27555d4f71bb4e24b87571f89eab2b4a06677bb6",
+            "disabled": false
+        },
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git": {
+            "hash": "b8a4febd5188558e6623d43499d6d718f3b762db",
+            "disabled": false
+        },
+        "https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git": {
+            "hash": "eaf4ae109324cabff0765a2fa1544ab74ef5ba1a",
+            "disabled": false
+        },
+        "https://github.com/ali1234/comfyui-job-iterator": {
+            "hash": "dfedfe40525d6f0564500f4cc27f3905d532eed6",
+            "disabled": false
+        },
+        "https://github.com/ltdrdata/ComfyUI-Manager.git": {
+            "hash": "9ae7123159ceb4a86c89e5cf498484b88033e507",
+            "disabled": false
+        },
+        "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92.git": {
+            "hash": "ebcaad0edbfbd8783eb6ad3cb979f23ee3e71c5e",
+            "disabled": false
+        },
+        "https://github.com/Gourieff/comfyui-reactor-node.git": {
+            "hash": "0646e3bc3d2b53258ad467ea02b9877b7ab2689f",
+            "disabled": false
+        },
+        "https://github.com/shingo1228/ComfyUI-SDXL-EmptyLatentImage.git": {
+            "hash": "d886c198664998d1eecab60fff17509d22817977",
+            "disabled": false
+        },
+        "https://github.com/spinagon/ComfyUI-seamless-tiling": {
+            "hash": "bbcb4931866902b3de08fac0716aaadd126f9f39",
+            "disabled": false
+        },
+        "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git": {
+            "hash": "0592867fa6ade998e5930aac6f508084184229a1",
+            "disabled": false
+        },
+        "https://github.com/ltdrdata/ComfyUI-Workflow-Component": {
+            "hash": "cbcb88ddbba9a7d869ed04de05c851751db3fa9a",
+            "disabled": false
+        },
+        "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git": {
+            "hash": "77c74ec46faac15c386d4420b1bbd062d0e23633",
+            "disabled": false
+        },
+        "https://github.com/Fannovel16/comfyui_controlnet_aux.git": {
+            "hash": "28d63a01a9afb884597805a5d72511a07521a8e9",
+            "disabled": false
+        },
+        "https://github.com/cubiq/ComfyUI_essentials.git": {
+            "hash": "e2fb161fe2b7f32603c9cd270d5e68ce409a2357",
+            "disabled": false
+        },
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git": {
+            "hash": "186b76eb58e89b20e70e97e2fe6a6440078904b9",
+            "disabled": false
+        },
+        "https://github.com/JPS-GER/ComfyUI_JPS-Nodes.git": {
+            "hash": "294b0616e0b9758024ea362868c99ac6b171232f",
+            "disabled": false
+        },
+        "https://github.com/BlenderNeko/ComfyUI_Noise.git": {
+            "hash": "f227455f930ad1b5766f1a76e1bbdb911adfb85c",
+            "disabled": false
+        },
+        "https://github.com/kinfolk0117/ComfyUI_TiledIPAdapter": {
+            "hash": "734454a96914064c581d885fc49dc958e84b78ad",
+            "disabled": false
+        },
+        "https://github.com/BlenderNeko/ComfyUI_TiledKSampler": {
+            "hash": "25d1cd2145268b617b12e7a98f28aeb5f3752bbc",
+            "disabled": false
+        },
+        "https://github.com/TinyTerra/ComfyUI_tinyterraNodes.git": {
+            "hash": "eda8a093d72c319f625f95c3f8275c570d32fc5d",
+            "disabled": false
+        },
+        "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
+            "hash": "6ea48202a76ccf5904ddfa85f826efa80dd50520",
+            "disabled": false
+        },
+        "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes": {
+            "hash": "2ace4c463d5b2063de35e46ebb9bd3f10e2d34b4",
+            "disabled": false
+        },
+        "https://github.com/jags111/efficiency-nodes-comfyui.git": {
+            "hash": "aba6cd0e6c90b73132742bf5c48ac8f87f0bca98",
+            "disabled": false
+        },
+        "https://github.com/mav-rik/facerestore_cf.git": {
+            "hash": "2b5d727ed658e0b3feb14a620d67dad1b1bcb0ab",
+            "disabled": false
+        },
+        "https://github.com/Extraltodeus/LoadLoraWithTags": {
+            "hash": "dec675897441d890cd82ce722cec66b0b742cbb2",
+            "disabled": false
+        },
+        "https://github.com/AIrjen/OneButtonPrompt": {
+            "hash": "db99ea118dae22f709ca85aa4b6f22271db29821",
+            "disabled": false
+        },
+        "https://github.com/Jcd1230/rembg-comfyui-node.git": {
+            "hash": "fac7df6c3f42e158a2829b511b37f13e4cc834eb",
+            "disabled": false
+        },
+        "https://github.com/rgthree/rgthree-comfy.git": {
+            "hash": "20779341846faac7e54ddd44f540425cad94ea9d",
+            "disabled": false
+        },
+        "https://github.com/twri/sdxl_prompt_styler.git": {
+            "hash": "95eea10c7024376903cee1185088d50c0965299d",
+            "disabled": false
+        },
+        "https://github.com/SeargeDP/SeargeSDXL.git": {
+            "hash": "2eb934bde0d70169ad2485695e348cf2490dc28e",
+            "disabled": false
+        },
+        "https://github.com/WASasquatch/was-node-suite-comfyui": {
+            "hash": "4e53775e650a7e2d2d1d73056bb914d7edc57f69",
+            "disabled": false
+        },
+        "https://github.com/wallish77/wlsh_nodes": {
+            "hash": "5e4dfe9dedadf7333a927829a4eba1125e788e12",
+            "disabled": false
+        }
+    },
+    "file_custom_nodes": [
+        {
+            "filename": "gcLatentTunnel.py",
+            "disabled": false
+        }
+    ]
+}
