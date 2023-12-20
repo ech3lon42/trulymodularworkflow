@@ -43,6 +43,7 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 - Added a MaxQuality Preset
 - Reworked the Reimagine module (it can do even more amazing things now, try it).
 - Several other fixes and improvements
+- Important: ``MAX_NUMBER_OF_NODES: 5000`` must be set in ``ComfyUI/web/lib/litegraph.core.js``
 
 ## Notable Features
 ### Breaks up the workflow into functional parts called modules (or stages).
