@@ -1,5 +1,5 @@
 {
-    "comfyui": "57926635e8d84ae9eea4a0416cc75e363f5ede45",
+    "comfyui": "e82942cc293a7f707f3ba5611e33ec2284278268",
     "git_custom_nodes": {
         "https://github.com/chrisgoringe/cg-image-picker.git": {
             "hash": "d3a3c8a99804e2bfa3014cb3f1a2219ffca71015",
@@ -21,6 +21,10 @@
             "hash": "bdddb08ca82d90d75d97b1d437a652e0284a32ac",
             "disabled": false
         },
+        "https://github.com/Trung0246/ComfyUI-0246.git": {
+            "hash": "153b2f34abb5bcbd7ab7a14cb9d8b6f6f399a3be",
+            "disabled": false
+        },
         "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git": {
             "hash": "aa0d4b42fc0f0a5f973f9d390502a476ab5c35f0",
             "disabled": false
@@ -33,6 +37,10 @@
             "hash": "27555d4f71bb4e24b87571f89eab2b4a06677bb6",
             "disabled": false
         },
+        "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation": {
+            "hash": "084c8f64bdcbce75e42b1bfb160a5d4f570cc0a3",
+            "disabled": false
+        },
         "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git": {
             "hash": "b8a4febd5188558e6623d43499d6d718f3b762db",
             "disabled": false
@@ -41,12 +49,16 @@
             "hash": "eaf4ae109324cabff0765a2fa1544ab74ef5ba1a",
             "disabled": false
         },
-        "https://github.com/ali1234/comfyui-job-iterator": {
-            "hash": "dfedfe40525d6f0564500f4cc27f3905d532eed6",
-            "disabled": false
-        },
         "https://github.com/ltdrdata/ComfyUI-Manager.git": {
             "hash": "9ae7123159ceb4a86c89e5cf498484b88033e507",
+            "disabled": false
+        },
+        "https://github.com/NimaNzrii/comfyui-photoshop": {
+            "hash": "ed6d402aa2d57ef7f2ecbac5a728066b64b78fb6",
+            "disabled": false
+        },
+        "https://github.com/NimaNzrii/comfyui-popup_preview": {
+            "hash": "3ddb46c6599dcc7da0a2d1dfafb5831fa8e04266",
             "disabled": false
         },
         "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92.git": {
@@ -55,6 +67,10 @@
         },
         "https://github.com/Gourieff/comfyui-reactor-node.git": {
             "hash": "0646e3bc3d2b53258ad467ea02b9877b7ab2689f",
+            "disabled": false
+        },
+        "https://github.com/Kaharos94/ComfyUI-Saveaswebp": {
+            "hash": "010784d7813950a5ac6046f543c670e8dd24e8c6",
             "disabled": false
         },
         "https://github.com/shingo1228/ComfyUI-SDXL-EmptyLatentImage.git": {
@@ -73,6 +89,10 @@
             "hash": "cbcb88ddbba9a7d869ed04de05c851751db3fa9a",
             "disabled": false
         },
+        "https://github.com/BlenderNeko/ComfyUI_ADV_CLIP_emb": {
+            "hash": "c8b14087afab8efae22fce098b742f01cce22947",
+            "disabled": false
+        },
         "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git": {
             "hash": "77c74ec46faac15c386d4420b1bbd062d0e23633",
             "disabled": false
@@ -85,6 +105,10 @@
             "hash": "e2fb161fe2b7f32603c9cd270d5e68ce409a2357",
             "disabled": false
         },
+        "https://github.com/hustille/ComfyUI_hus_utils": {
+            "hash": "731150877159a553ff7cfe32eecfdc6ccdbd527b",
+            "disabled": false
+        },
         "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git": {
             "hash": "186b76eb58e89b20e70e97e2fe6a6440078904b9",
             "disabled": false
@@ -95,6 +119,14 @@
         },
         "https://github.com/BlenderNeko/ComfyUI_Noise.git": {
             "hash": "f227455f930ad1b5766f1a76e1bbdb911adfb85c",
+            "disabled": false
+        },
+        "https://github.com/ssitu/ComfyUI_restart_sampling": {
+            "hash": "24c70dce64774f54b4b7dfa03c72128a1aa8a387",
+            "disabled": false
+        },
+        "https://github.com/BlenderNeko/ComfyUI_SeeCoder": {
+            "hash": "391dc70aa6797eb937df82ca4cdfc6b1b5477ed6",
             "disabled": false
         },
         "https://github.com/kinfolk0117/ComfyUI_TiledIPAdapter": {
@@ -111,6 +143,14 @@
         },
         "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
             "hash": "6ea48202a76ccf5904ddfa85f826efa80dd50520",
+            "disabled": false
+        },
+        "https://github.com/melMass/comfy_mtb": {
+            "hash": "90f3bc2d953b299ea34e9e3a925f1a824b488855",
+            "disabled": false
+        },
+        "https://github.com/deroberon/demofusion-comfyui.git": {
+            "hash": "b1f66083232aa64bb2f8bcce6bc77f3bac930f87",
             "disabled": false
         },
         "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes": {
@@ -139,6 +179,10 @@
         },
         "https://github.com/rgthree/rgthree-comfy.git": {
             "hash": "20779341846faac7e54ddd44f540425cad94ea9d",
+            "disabled": false
+        },
+        "https://github.com/mcmonkeyprojects/sd-dynamic-thresholding": {
+            "hash": "249b8cb6048f18e569873d28f235e233e88c52a4",
             "disabled": false
         },
         "https://github.com/twri/sdxl_prompt_styler.git": {
