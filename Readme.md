@@ -7,7 +7,7 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 > [!IMPORTANT]  
 > **Because the workflow now contains more than 1000 Nodes, you must apply the following change to your ComfyUI installation:**
 > 1. Open ``ComfyUI/web/lib/litegraph.core.js``
-> 2. Fine the String ``MAX_NUMBER_OF_NODES: 1000`` and change it to ``MAX_NUMBER_OF_NODES: 5000``
+> 2. Find the String ``MAX_NUMBER_OF_NODES: 1000`` and change it to ``MAX_NUMBER_OF_NODES: 5000``
 > 3. Save the file and restart your ComfyUI. You are now able to load the workflow (and any other workflows with more than 1k nodes).
 
 ![Context Node](documentation/images/banner.png)
@@ -35,7 +35,9 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 
 ## Changelog
 ## [0.9.1] - 2023-12-20
-- Added Photoshop Live Inpainting
+- Added Photoshop Live Inpainting. 
+  - To use it, scroll to the very left of the workflow and enter the photoshop server password into the Photoshop to ComfyUI node. 
+  - Watch the Tutorial here: https://www.youtube.com/watch?v=Eu1vLWHZkDs
 - Added the ability to choose custom checkpoints for most modules
 - Added the ability to replace or extend prompts for most modules
 - Refactored all control panels to use the newly added ComfyUI Group nodes
@@ -422,6 +424,12 @@ The IPAdapter is not really needed to understand and follow the concept, but I u
 
 
 ## Installation
+
+> [!IMPORTANT]  
+> **Because the workflow now contains more than 1000 Nodes, you must apply the following change to your ComfyUI installation:**
+> 1. Open ``ComfyUI/web/lib/litegraph.core.js``
+> 2. Find the String ``MAX_NUMBER_OF_NODES: 1000`` and change it to ``MAX_NUMBER_OF_NODES: 5000``
+> 3. Save the file and restart your ComfyUI. You are now able to load the workflow (and any other workflows with more than 1k nodes).
 
 Simply load the json file in your ComfyUI. Make sure you have installed the **requirements** below and downloaded the needed **models**. 
 
