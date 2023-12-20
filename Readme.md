@@ -35,7 +35,9 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 
 ## Changelog
 ## [0.9.1] - 2023-12-20
-- Added Photoshop Live Inpainting
+- Added Photoshop Live Inpainting. 
+  - To use it, scroll to the very left of the workflow and enter the photoshop server password into the Photoshop to ComfyUI node. 
+  - Watch the Tutorial here: https://www.youtube.com/watch?v=Eu1vLWHZkDs
 - Added the ability to choose custom checkpoints for most modules
 - Added the ability to replace or extend prompts for most modules
 - Refactored all control panels to use the newly added ComfyUI Group nodes
