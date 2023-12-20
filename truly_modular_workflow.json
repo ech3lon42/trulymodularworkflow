@@ -59289,7 +59289,8 @@
         {
           "name": "",
           "type": "*",
-          "link": null
+          "link": null,
+          "dir": 3
         }
       ],
       "outputs": [
