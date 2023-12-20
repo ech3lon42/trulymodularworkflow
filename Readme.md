@@ -6,7 +6,7 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 
 > [!IMPORTANT]  
 > **Because the workflow now contains more than 1000 Nodes, you must apply the following change to your ComfyUI installation:**
-> 1. Open ComfyUI/web/lib/litegraph.core.js
+> 1. Open ``ComfyUI/web/lib/litegraph.core.js``
 > 2. Fine the String ``MAX_NUMBER_OF_NODES: 1000`` and change it to ``MAX_NUMBER_OF_NODES: 5000``
 > 3. Save the file and restart your ComfyUI. You are now able to load the workflow (and any other workflows with more than 1k nodes).
 
