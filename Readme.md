@@ -4,6 +4,12 @@
 
 A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow that uses the latest and greatest community nodes ([Rgthree Nodes](https://github.com/rgthree/rgthree-comfy), [IPAdapter Plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus), [Impact Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack), [Image Picker](https://github.com/chrisgoringe/cg-image-picker) and others) in innovative ways to achieve complete control over the execution. Beyond that we provide a template, along with instructional videos, for the community to adapt and take the next step in creating truly modular workflows by passing contexts and images to modules, context switches and image choosers.
 
+> [!IMPORTANT]  
+> Because the workflow now contains more than 1000 Nodes, you must apply the following change to your ComfyUI installation:
+> 1. Open ComfyUI/web/lib/litegraph.core.js
+> 2. Fine the String ``MAX_NUMBER_OF_NODES: 1000`` and change it to ``MAX_NUMBER_OF_NODES: 5000``
+> 3. Save the file and restart your ComfyUI. You are now able to load the workflow (and any other workflows with more than 1k nodes).
+
 ![Context Node](documentation/images/banner.png)
 
 <p align="center">
