@@ -60736,8 +60736,8 @@
       "id": 904,
       "type": "Float",
       "pos": [
-        8697.61689815749,
-        6869.568810919658
+        8392.235446224662,
+        6871.407678762986
       ],
       "size": {
         "0": 284.5018310546875,
@@ -68576,8 +68576,8 @@
       "id": 2002,
       "type": "KSampler Config (rgthree)",
       "pos": [
-        8389.58454749969,
-        6866.346572313451
+        8084.203095566863,
+        6868.185440156779
       ],
       "size": {
         "0": 291.82611083984375,
@@ -90837,62 +90837,6 @@
       ]
     },
     {
-      "id": 3457,
-      "type": "Control Net Stacker",
-      "pos": [
-        8408,
-        7159
-      ],
-      "size": {
-        "0": 262.1551208496094,
-        "1": 146
-      },
-      "flags": {},
-      "order": 429,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "control_net",
-          "type": "CONTROL_NET",
-          "link": 6552,
-          "slot_index": 0
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 6560
-        },
-        {
-          "name": "cnet_stack",
-          "type": "CONTROL_NET_STACK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CNET_STACK",
-          "type": "CONTROL_NET_STACK",
-          "links": [
-            6620
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Inpaint Controlnet",
-      "properties": {
-        "Node name for S&R": "Control Net Stacker"
-      },
-      "widgets_values": [
-        0.4,
-        0,
-        0.9
-      ],
-      "color": "#515556",
-      "bgcolor": "#3d4142",
-      "shape": 1
-    },
-    {
       "id": 3323,
       "type": "LoadImage",
       "pos": [
@@ -107511,53 +107455,6 @@
       "bgcolor": "#353"
     },
     {
-      "id": 446,
-      "type": "Fast Bypasser (rgthree)",
-      "pos": {
-        "0": 7925,
-        "1": 6883,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": {
-        "0": 440,
-        "1": 486
-      },
-      "flags": {},
-      "order": 575,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "Inpaint",
-          "type": "*",
-          "link": 2805,
-          "dir": 3
-        },
-        {
-          "name": "",
-          "type": "*",
-          "link": null,
-          "dir": 3
-        }
-      ],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": [],
-          "dir": 4
-        }
-      ],
-      "title": "Workflow Enabler",
-      "properties": {}
-    },
-    {
       "id": 3355,
       "type": "EmptyLatentImage",
       "pos": [
@@ -108426,6 +108323,109 @@
       ],
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 446,
+      "type": "Fast Bypasser (rgthree)",
+      "pos": {
+        "0": 8446,
+        "1": 5046,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 440,
+        "1": 486
+      },
+      "flags": {},
+      "order": 575,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "Inpaint",
+          "type": "*",
+          "link": 2805,
+          "dir": 3
+        },
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": [],
+          "dir": 4
+        }
+      ],
+      "title": "Workflow Enabler",
+      "properties": {}
+    },
+    {
+      "id": 3457,
+      "type": "Control Net Stacker",
+      "pos": [
+        8387,
+        7163
+      ],
+      "size": {
+        "0": 262.1551208496094,
+        "1": 146
+      },
+      "flags": {},
+      "order": 429,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "control_net",
+          "type": "CONTROL_NET",
+          "link": 6552,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 6560
+        },
+        {
+          "name": "cnet_stack",
+          "type": "CONTROL_NET_STACK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CNET_STACK",
+          "type": "CONTROL_NET_STACK",
+          "links": [
+            6620
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Inpaint Controlnet",
+      "properties": {
+        "Node name for S&R": "Control Net Stacker"
+      },
+      "widgets_values": [
+        0.4,
+        0,
+        0.9
+      ],
+      "color": "#515556",
+      "bgcolor": "#3d4142",
+      "shape": 1
     }
   ],
   "links": [
@@ -123190,8 +123190,8 @@
     {
       "title": "Setup Initial Image Generation",
       "bounding": [
-        8378,
-        6792,
+        8073,
+        6794,
         614,
         318
       ],

@@ -17,6 +17,8 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 </p>
 
 ## Table of Contents
+[Changelog](#notable-features)
+
 [Features](#notable-features)
 
 [Getting Started](#getting-started)
@@ -30,6 +32,18 @@ A feature rich [ComfyUI](https://github.com/comfyanonymous/ComfyUI) workflow tha
 [FAQ](#FAQ)
 
 [Troubleshooting](#Troubleshooting)
+
+## Changelog
+## [0.9.1] - 2023-12-20
+- Added Photoshop Live Inpainting
+- Added the ability to choose custom checkpoints for most modules
+- Added the ability to replace or extend prompts for most modules
+- Refactored all control panels to use the newly added ComfyUI Group nodes
+- Refactored and added much improved upscaling modules
+- Added a MaxQuality Preset
+- Reworked the Reimagine module (it can do even more amazing things now, try it).
+- Several other fixes and improvements
+
 ## Notable Features
 ### Breaks up the workflow into functional parts called modules (or stages).
 
